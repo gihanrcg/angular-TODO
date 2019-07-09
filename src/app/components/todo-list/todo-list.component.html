@@ -1,0 +1,14 @@
+<input type="text" class="todo-input" placeholder="What needs to be done ?" [(ngModel)]="todoTitle"
+(keyup.enter) = "addTodo()"
+>
+
+<div class="todo-item" *ngFor="let todo of todos">
+    <div class="todo-item-left">
+        <input type="checkbox" (click)="completeTodo(todo.id)">
+        <div class="todo-item-label">{{ todo.title }}</div>
+    </div>
+    <div class="remove-item" (click)="deleteTodo(todo.id)">
+        &times;
+    </div>  
+</div>
+

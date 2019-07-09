@@ -1,0 +1,31 @@
+.todo-input{
+    width: 100%;
+    padding: 10px 18px;
+    font-size: 18px;
+    margin-bottom: 16px;
+
+    &:focus{
+        outline: 0;
+    }
+}
+
+.todo-item{
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    animation-duration: 1s;
+}
+
+.remove-item{
+    cursor: pointer;
+    margin-left: 14px;
+    &:hover{
+        color:red;
+    }
+}
+
+.todo-item-left{
+    display: flex;
+    align-items: center;
+}
